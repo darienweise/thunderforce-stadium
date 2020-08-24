@@ -1,0 +1,372 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* FONTS
+   font-family: 'Iceberg', cursive;
+   font-family: 'Montserrat', sans-serif;
+
+   COLORS 
+   #FFFFF white 
+   #9200FF vivid purple  
+   #3D0369 royal purple 
+   #0F0632 dark indigo 
+   #08080B almost black 
+*/
+
+
+/* GENERAL */
+html {
+   font-size: 62.5%;
+
+}
+
+body {
+   background-color: purple;
+   color: white;
+   font-size: 1.4rem;
+}
+
+.wrapper {
+   max-width: 85vw;
+   margin: 0 auto;
+}
+
+
+ul {
+   margin: 0 0 0 500px;
+   padding: 50px 0;
+   list-style-type: none;
+}
+
+li a {
+   float: left;
+   margin: 0 20px 0;
+}
+
+a {
+   color: white;
+   font-size: 2rem;
+   font-family: 'Montserrat', sans-serif;
+   text-decoration: none;
+}
+
+h2 {
+   font-family: 'Iceberg', cursive;
+   font-size: 5rem;
+   margin: 0;
+   font-weight: 700;
+}
+/* Note re: "Headings" there is no bold font weight for the Iceberg font */
+
+p,
+.contact-span {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2rem;
+   line-height: 2.9rem;
+   margin: 0;
+}
+
+
+button {
+   background-color: #9200FF;
+   color: white;
+   font-family: 'Iceberg', cursive;
+   font-size: 2.5rem;
+   padding: 10px 20px;
+   border-style: none;
+}
+/* ---------------- */
+/* HEADER */
+/* ---------------- */
+header {
+   background-image: url(../assets/main-image.png);
+   background-size: cover;
+   height: 90vh;
+}
+
+.header-card {
+   text-align: center;
+}
+
+
+/* HEADER CARD */
+.header-card {
+   margin-top: 7%;
+}
+
+.header-card span,
+h1 {
+   font-family: 'Iceberg', cursive;
+   font-size: 8rem;
+   margin: 0;
+}
+
+.header-span {
+   margin-bottom: 20px;
+}
+.hot-cops {
+   font-size: 3.5rem;
+   background-color: #9200FF;
+   padding: 15px 20px;
+}
+
+/* FEATURE SECTION */
+.feature {
+   background-color: #0F0632;
+}
+.feature-card {
+width: 50%;
+float: left;
+margin: 0;
+}
+
+.feature-text {
+   margin: 15rem 10rem 0;
+}
+
+.feature-text p {
+   font-size: 2.4rem;
+   padding-bottom: 1.5rem;
+}
+
+.feature-link {
+   background-color: #9200FF;
+   font-family: 'Iceberg', cursive;
+   font-size: 2.5rem;
+   padding: 10px 20px;
+}
+
+
+/* SHOP SECTION */
+.shop {
+   background-color: #08080B;
+   padding: 100px 0;
+}
+
+.shop-card {
+   width: 50%;
+   float: left;
+}
+
+.shop img {
+   width: 25%;
+}
+
+.shop-text{
+   width: 75%;
+   padding-left: 40px;
+}
+
+.shop p {
+   margin-bottom: 20px;
+}
+.shop a {
+   background-color: #9200FF;
+   font-family: 'Iceberg', cursive;
+   font-size: 2.5rem;
+   padding: 10px 20px;
+
+}
+
+/* CTA SECTION */
+.cta {
+   background-color: #3D0369;
+   padding: 100px 0;
+   text-align: center;
+}
+
+.cta-container {
+   margin-left: 20%;
+}
+.cta-icon {
+   float: left;
+   margin: 100px 0;
+   width: 25%;
+}
+
+.cta i {
+   font-size: 6rem;
+   padding-bottom: 30px;
+}
+
+.cta-link a {
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+
+/* INSTAGRAM SECTION */
+.instagram {
+   background-color: #0F0632;
+   height: 80vh;
+   text-align: center;
+}
+
+.instagram-img {
+   margin: 100px 0 100px 75px;
+}
+
+.instagram img {
+   float: left;
+   width: 30%;
+   margin-right: 25px;
+}
+
+
+/* ---------------- */
+/* BOTTOM SECTION */
+/* ---------------- */
+
+.bottom {
+   background-color: #3D0369;
+   height: 45vh;
+}
+
+/* CONTACT SECTION */
+.contact-container {
+   padding: 15px 0;
+}
+
+.contact-card {
+   float: left;
+   /* padding: 0 30px; */
+   width: 50%;
+}
+
+h3 {
+   font-family: 'Iceberg', cursive;
+   font-size: 4.1rem;
+   margin: 5px 0;
+}
+
+input {
+   border: none;
+   border-style: none;
+   padding: 15px 200px;
+   margin: 0;
+}
+
+/* 
+button {
+   background-color: #9200FF;
+   color: white;
+   font-family: 'Iceberg', cursive;
+   font-size: 2.5rem;
+   padding: 10px 20px;
+   border-style: none;
+} */
+
+
+/* FOOTER */
+footer {
+   background-color: #0F0632;
+   text-align: center;
+}
+
+h4 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.8rem;
+   font-weight: 700;
+   padding: 10px 0;
+   margin: 0;
+}
+
+/* ******************* */
+/* MEDIA QUERIES */
+/* ******************* */
+
+/* TABLET */
+@media (max-width: 768px) {
+   .desktop-display {
+      display: none;
+   }
+
+   header {
+      max-height: 70vh;
+   }
+
+   .hot-cops {
+      font-size: 2.5rem;
+      background-color: #9200FF;
+      padding: 15px 20px;
+   }
+
+   /* FEATURE SECTION */
+   .feature-card {
+      width: 100%;
+      float: left;
+      margin: 0;
+      }
+   
+   .feature-text {
+      margin: 10rem 10rem;
+   }
+
+   /* SHOP SECTION */
+   .shop-card {
+      width: 100%;
+      float: left;   
+   }
+
+   .shop img {
+      width: 100%;
+   }
+
+   /* CTA SECTION */
+
+   .cta-container {
+      margin-left: 0;
+   }
+
+   .cta-icon {
+      float: none;
+      margin: 50px 0;
+      width: 100%;
+   }
+   
+   .cta i {
+      font-size: 6rem;
+      padding-bottom: 30px;
+   }
+
+   /* INSTAGRAM SECTION */
+   .instagram {
+      background-color: #0F0632;
+      height: 50vh;
+      text-align: center;
+   }
+   
+   .instagram-img {
+      margin: 100px 0 100px 75px;
+   }
+   
+   .instagram img {
+      float: left;
+      width: 30%;
+      margin-right: 25px;
+   }
+
+   .contact-card {
+      float: none;
+   }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 450px) {
+   .mobile-view {
+      display: none;
+   }
+
+   .contact-card {
+      float: none;
+   }
+}
